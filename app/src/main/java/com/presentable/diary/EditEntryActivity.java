@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -27,6 +28,7 @@ public class EditEntryActivity extends ActionBarActivity {
     private Date date;
     private Entry existingEntry;
     private Intent resultIntent;
+    private Resources res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,8 @@ public class EditEntryActivity extends ActionBarActivity {
         mSaveButton = (Button) findViewById(R.id.activity_edit_entry_btn_save);
         mDeleteButton = (Button) findViewById(R.id.activity_edit_entry_btn_delete);
 
+        res = context.getResources();
+
         resultIntent = intent;
 
         initializeSpinners();
@@ -58,14 +62,14 @@ public class EditEntryActivity extends ActionBarActivity {
     public void initializeSpinners() {
         ArrayAdapter<String> weatherSpinnerAdapter =
                 new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
-                        Weather.weathers);
+                        res.getStringArray(R.array.weather_array));
         weatherSpinnerAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
         mWeatherSpinner.setAdapter(weatherSpinnerAdapter);
 
         ArrayAdapter<String> moodSpinnerAdapter =
                 new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
-                        Mood.moods);
+                        res.getStringArray(R.array.mood_array));
         moodSpinnerAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
         mMoodSpinner.setAdapter(moodSpinnerAdapter);
@@ -78,9 +82,9 @@ public class EditEntryActivity extends ActionBarActivity {
                 try {
                     String contents = mEntryEditText.getText().toString();
                     String selectedWeather =
-                            String.valueOf(mWeatherSpinner.getSelectedItem());
+                            Weather.weathers[mWeatherSpinner.getSelectedItemPosition()];
                     String selectedMood =
-                            String.valueOf(mMoodSpinner.getSelectedItem());
+                            Mood.moods[mMoodSpinner.getSelectedItemPosition()];
 
                     Entry entry = new Entry.Builder(contents).setDate(date).setMood(new Mood(selectedMood)).setWeather(new Weather(selectedWeather)).build();
 

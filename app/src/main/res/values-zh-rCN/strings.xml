@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日记</string>
+    <string name="title_activity_home">首页</string>
+    <string name="title_activity_edit_entry">添加信息</string>
+    <string name="activity_edit_entry_weather">天气：</string>
+    <string name="activity_edit_entry_btn_save">保存</string>
+    <string name="activity_edit_entry_mood">心情：</string>
+    <string name="activity_edit_entry_et_greeting">亲，咱们来谈人生吧！^_^</string>
+    <string name="activity_edit_entry_btn_delete">删除</string>
+
+    <string-array name="weather_array">
+        <item>（无）</item>
+        <item>晴天</item>
+        <item>多云</item>
+        <item>多雨</item>
+        <item>似雪</item>
+        <item>有风</item>
+        <item>暴风雨</item>
+    </string-array>
+
+    <string-array name="mood_array">
+        <item>（无）</item>
+        <item>欢天喜地</item>
+        <item>心如刀割</item>
+        <item>狂风怒号</item>
+        <item>慷慨激昂</item>
+        <item>坐立不安</item>
+    </string-array>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="action_settings">设置</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Journal</string>
+    <string name="title_activity_home">Accueil</string>
+    <string name="title_activity_edit_entry">Ajouter une entrée</string>
+    <string name="activity_edit_entry_weather">Météo:</string>
+    <string name="activity_edit_entry_btn_save">Enregistrer</string>
+    <string name="activity_edit_entry_mood">Mode:</string>
+    <string name="activity_edit_entry_et_greeting">Comment ça va? ^_^</string>
+    <string name="activity_edit_entry_btn_delete">Éffacer</string>
+
+    <string-array name="weather_array">
+        <item>(aucun)</item>
+        <item>ensoleillé</item>
+        <item>nuageux</item>
+        <item>pluvieux</item>
+        <item>neigeux</item>
+        <item>venteux</item>
+        <item>orageux</item>
+    </string-array>
+
+    <string-array name="mood_array">
+        <item>(aucun)</item>
+        <item>content</item>
+        <item>triste</item>
+        <item>fâché</item>
+        <item>excité</item>
+        <item>nerveux</item>
+    </string-array>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="action_settings">Options</string>
+</resources>

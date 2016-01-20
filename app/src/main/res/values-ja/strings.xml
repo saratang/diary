@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日記帳</string>
+    <string name="title_activity_home">ホーム</string>
+    <string name="title_activity_edit_entry">情報を追加します</string>
+    <string name="activity_edit_entry_weather">天気：</string>
+    <string name="activity_edit_entry_btn_save"> セーブ</string>
+    <string name="activity_edit_entry_mood">ムード：</string>
+    <string name="activity_edit_entry_et_greeting">元気ですか？＾＿＾</string>
+    <string name="activity_edit_entry_btn_delete">削除します</string>
+
+    <string-array name="weather_array">
+        <item>（ノー）</item>
+        <item>晴れました</item>
+        <item>曇りました</item>
+        <item>レイニー</item>
+        <item>スノー</item>
+        <item>ウィンディ</item>
+        <item>ストーム</item>
+    </string-array>
+
+    <string-array name="mood_array">
+        <item>（ノー）</item>
+        <item>満足して</item>
+        <item>悲しげな</item>
+        <item>怒っています</item>
+        <item>興奮</item>
+        <item>テンション</item>
+    </string-array>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="action_settings">オプション</string>
+</resources>
