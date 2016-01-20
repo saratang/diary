@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_edit_entry">Add Entry</string>
+    <string name="activity_edit_entry_weather">Weather:</string>
+    <string name="activity_edit_entry_btn_save">Save</string>
+    <string name="activity_edit_entry_mood">Mood:</string>
+    <string name="activity_edit_entry_et_greeting">How are we feeling today? ^_^</string>
+    <string name="activity_edit_entry_btn_delete">Delete</string>
+
+    <string-array name="weather_array">
+        <item>(none)</item>
+        <item>sunny</item>
+        <item>cloudy</item>
+        <item>rainy</item>
+        <item>snowy</item>
+        <item>windy</item>
+        <item>stormy</item>
+    </string-array>
+
+    <string-array name="mood_array">
+        <item>(none)</item>
+        <item>happy</item>
+        <item>sad</item>
+        <item>angry</item>
+        <item>excited</item>
+        <item>nervous</item>
+    </string-array>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
